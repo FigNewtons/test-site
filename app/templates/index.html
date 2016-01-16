@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Hello, {{ user.username }}!</h1>
+    {% for item in items %}
+        <div>
+            <p>
+                <b> {{ item.product.name }} </b>
+                {{ item.description }}
+            </p>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
+        
+        
